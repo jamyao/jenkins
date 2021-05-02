@@ -17,11 +17,12 @@ pipeline {
             steps {
                 echo "Deploy the application"
             }
+        }
 
-	stage("canary") {
-	    steps {
-		echo "Canary testing the application"
-	    }
+	    stage("canary") {
+	        steps {
+		        echo "Canary testing the application"
+	        }
         }
     }
 }
