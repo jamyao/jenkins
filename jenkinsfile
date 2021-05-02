@@ -5,6 +5,7 @@ pipeline {
             steps {
                 echo "Building the application"
                 sh '''
+                    set +x
                     for i in {1..10}
                     do
                         echo $i
