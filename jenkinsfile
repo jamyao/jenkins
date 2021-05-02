@@ -4,7 +4,7 @@ pipeline {
         stage("build") {
             steps {
                 echo "Building the application"
-                for i in {1..10}; do echo $i; done
+                sh -c "for i in {1..10}; do echo $i; done"
             }
         }
 
